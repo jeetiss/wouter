@@ -1,14 +1,10 @@
 /**
- * @jsx h
- * @jest-environment node
+ * @vitest-environment node
  */
 
-import { h } from "preact";
 import renderToString from "preact-render-to-string";
-
-// make the library use Preact exports
-jest.mock("../react-deps.js", () => require("../preact/react-deps.js"));
-const { Route, Link, Switch, Router, useLocation } = require("../index.js");
+import { it, expect, describe } from "vitest";
+import { Route, Link, Switch, Router, useLocation } from "wouter-preact";
 
 describe("Preact SSR", () => {
   it("supports SSR", () => {

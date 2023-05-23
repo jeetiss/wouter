@@ -1,4 +1,5 @@
-import createMatcher from "../matcher";
+import createMatcher from "wouter/matcher";
+import { it, expect, describe } from "vitest";
 
 it("exports a factory function", () => {
   expect(createMatcher).toBeInstanceOf(Function);
