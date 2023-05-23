@@ -2,7 +2,7 @@ import { render } from "preact";
 import { it, expect, describe, beforeEach, afterEach, vi } from "vitest";
 import { act, setupRerender, teardown } from "preact/test-utils";
 
-import { Route, Link, Switch } from 'wouter-preact'
+import { Route, Link, Switch } from "wouter-preact";
 
 describe("Preact support", () => {
   beforeEach(() => {
