@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineProject({
   plugins: [react({ jsxRuntime: "automatic" })],
   test: {
-    name: "wouter-react",
+    name: "wouter",
     environment: "jsdom",
   },
 });
